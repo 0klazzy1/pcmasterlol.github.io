@@ -1,0 +1,221 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#hero {
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin: 0;
+}
+
+#about {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.about-image,
+.about-text {
+  width: 48%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.about-text li {
+  font-size: 17px;
+  margin-bottom: 14px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.about-text li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0d6efd;
+}
+
+#services {
+  padding: 80px 0;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  text-align: center;
+}
+
+.card {
+  width: 30%;
+  display: inline-block;
+  background-color: white;
+  margin: 1%;
+  padding: 25px;
+  border-radius: 14px;
+  vertical-align: top;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0d6efd;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+#contact {
+  padding: 80px 0;
+  background-color: white;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+button {
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media (max-width: 900px) {
+
+  .about-image,
+  .about-text {
+    width: 100%;
+    display: block;
+  }
+
+  .about-image {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #hero h1 {
+    font-size: 34px;
+  }
+
+  #hero p {
+    font-size: 17px;
+  }
+
+  .about-text h2,
+  #services h2,
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  .about-text p,
+  .card p {
+    font-size: 16px;
+  }
+
+}
